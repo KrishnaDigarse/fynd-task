@@ -2,7 +2,7 @@
   {
     "id": "cd6c0172-7b6a-49ba-9045-9c90b255e72d",
     "rating": 4,
-    "review": "the is test feedback",
+    "review": "This is test feedback",
     "aiResponse": "Thank you for your feedback! We appreciate your 4-star rating.",
     "aiSummary": "Positive rating with generic test feedback.",
     "aiAction": "No immediate action required.",
@@ -11,7 +11,7 @@
   {
     "id": "64d5f234-efb6-4c5f-8e68-0d0c9705d6b1",
     "rating": 4,
-    "review": "sdasads",
+    "review": "The overall experience was good. The app is easy to use and the features are helpful.",
     "aiResponse": "Thank you for your 4/5 rating! We appreciate your feedback.",
     "aiSummary": "Positive rating received, text content unclear.",
     "aiAction": "No immediate action needed.",
