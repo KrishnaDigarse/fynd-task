@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Star, Send } from 'lucide-react';
 import clsx from 'clsx';
 
@@ -8,12 +8,16 @@ export default function UserDashboard() {
     const [loading, setLoading] = useState(false);
     const [response, setResponse] = useState(null);
 
+    useEffect(() => {
+        document.title = 'Submit Feedback | Fynd AI';
+    }, []);
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (!rating || !review) return;
 
         setLoading(true);
-        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        const API_URL = 'https://fynd-task.onrender.com';
 
         try {
             const res = await fetch(`${API_URL}/api/submit`, {

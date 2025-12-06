@@ -8,7 +8,7 @@ export default function AdminDashboard() {
 
     const fetchSubmissions = async () => {
         setLoading(true);
-        const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+        const API_URL = 'https://fynd-task.onrender.com';
 
         try {
             const res = await fetch(`${API_URL}/api/submissions`);
@@ -22,6 +22,7 @@ export default function AdminDashboard() {
     };
 
     useEffect(() => {
+        document.title = 'Admin Dashboard | Fynd AI';
         fetchSubmissions();
     }, []);
 
