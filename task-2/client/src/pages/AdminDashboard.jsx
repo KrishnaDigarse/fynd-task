@@ -22,7 +22,7 @@ export default function AdminDashboard() {
     };
 
     useEffect(() => {
-        document.title = 'Admin Dashboard | Fynd AI';
+        document.title = 'Admin Dashboard';
         fetchSubmissions();
     }, []);
 
@@ -72,7 +72,7 @@ export default function AdminDashboard() {
                         </div>
                     </div>
                     <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow">
-                        <div className="text-sm font-medium text-slate-500 mb-2">Sentiment Analysis</div>
+                        <div className="text-sm font-medium text-slate-500 mb-5">Sentiment Analysis</div>
                         <div className="flex items-end gap-2 h-10 mt-1">
                             <div className="flex-1 bg-emerald-100 rounded-t-lg relative group h-full">
                                 <div className="absolute inset-x-0 bottom-0 bg-emerald-500 rounded-t-lg transition-all" style={{ height: `${(sentimentCounts.positive / (submissions.length || 1)) * 100}%` }}></div>

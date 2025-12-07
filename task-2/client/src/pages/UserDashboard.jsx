@@ -9,7 +9,7 @@ export default function UserDashboard() {
     const [response, setResponse] = useState(null);
 
     useEffect(() => {
-        document.title = 'Submit Feedback | Fynd AI';
+        document.title = 'Submit Feedback';
     }, []);
 
     const handleSubmit = async (e) => {
@@ -40,7 +40,7 @@ export default function UserDashboard() {
 
     return (
         <main className="min-h-[80vh] flex items-center justify-center p-4">
-            <div className="max-w-md w-full bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl border border-white/20 p-8 transform transition-all hover:shadow-2xl">
+            <div className="max-w-md w-full bg-white/80 backdrop-blur-lg rounded-2xl shadow-xl border border-white/20 p-8">
                 <h1 className="text-3xl font-bold text-slate-800 mb-2 text-center">We Value Your Feedback</h1>
                 <p className="text-slate-500 text-center mb-8">Help us improve your experience</p>
 
